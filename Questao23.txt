@@ -1,0 +1,27 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+ 
+int main(void){
+  char txt[100];
+  int i, cont = 1, cont1 = 0;
+    
+  puts ("Digite uma frase: ");
+  fgets(txt, 200, stdin);
+
+  for(i=0; txt[i] != '\0'; i++){
+    if ((txt[i] >= 'a' && txt[i] <= 'z') || (txt[i] >= 'A' && txt[i] <= 'Z' )){
+    cont1++;
+    }
+  }
+  // printf ("texto informado possui %d caracteres \n", c);
+
+  for(i=0; txt[i] != '\0'; i++){
+    if (txt[i] == ' '){
+    cont++;
+    }
+  }
+  //printf("Palavras = %d",cont);
+  printf("%d caracteres, %d palavras", cont1, cont);
+  return 0;
+}
