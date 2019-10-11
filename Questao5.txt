@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void) {
+  int i, x = 0, fatorial = 1;
+  printf("Escolha um numero: ");
+  scanf ("%d", &x);
+  for (i=x; i>=1; i--){
+    fatorial = fatorial*i;
+  }
+  printf("%d! = %d", x, fatorial);
+  return 0;
+}
