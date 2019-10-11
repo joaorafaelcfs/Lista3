@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void) {
+  int i, tabuada = 0;
+  printf ("Tabuada do número 4");
+  for (i=1; i<=10; i++){
+    tabuada = 4*i;
+    printf ("4x%d = %d \n", i, tabuada);
+  }
+  return 0;
+}
