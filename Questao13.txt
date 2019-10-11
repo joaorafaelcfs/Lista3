@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+  int x = 0, y = 0, z = 1, n, soma = 1;
+  printf("Escolha um numero: ");
+  scanf("%d", &n);
+  printf ("1 \n");
+  while ( z < n){
+    x = y;
+    y = z;
+    z = y + x;
+    if (z<=n){
+    printf ("%d \n", z);
+    soma = soma + z;
+    }    
+  } 
+  printf ("soma = %d", soma);
+  return 0;
+}
