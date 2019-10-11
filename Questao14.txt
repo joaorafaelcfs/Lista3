@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+  int i, div[21], p = 0;
+  for (i=1000; i<=1999; i++){
+    //printf ("%d \n", i);
+    if (i%11 == 5 && p<20){
+      p++;
+      div[p] = i;
+      printf("N%d° = %d \n", p, div[p]);
+    }
+  }  
+  return 0;
+}
