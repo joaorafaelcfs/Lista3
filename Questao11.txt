@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+  int x, i, resto = 0, cont=0;
+  printf("Escolha um número: ");
+  scanf("%d", &x);
+  for (i=1; i<=x; i++){
+    resto = x%i;
+    if (resto == 0){
+      cont++;
+    }
+  }if (cont <= 2){
+    printf("É um número primo");
+  }else{
+    printf("Não é um número primo");
+  }
+  return 0;
+}
