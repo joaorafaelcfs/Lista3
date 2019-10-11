@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int intervalo (int x, int y){
+  int aleatorio = 0;
+  srand(time(0));
+  aleatorio = (rand()%(y - x) + x);  
+  return aleatorio;
+}
+
+int main(void) {
+int A, B;
+printf("Digite dois numeros para formar o seu conjunto: \n");
+scanf ("%d", &A);
+scanf ("%d", &B);
+printf ("Agora vai ser gerado um número aleatório que está no intervalo: [%d, %d] \n", A, B);
+printf ("Número aleatório: %d", intervalo (A, B));
+return 0;
+}
