@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+  int x,tam = 0;
+  char txt[100];
+  puts ("Entrada: ");
+  fgets(txt, 100, stdin);
+  //puts(txt);
+  tam = strlen(txt);
+  printf("Saida: ");
+  for (x=tam-1; x>=0; x--){
+  printf("%c",txt[x]);
+  }
+  return 0;
+}
