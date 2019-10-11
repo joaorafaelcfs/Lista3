@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+void funcao(){
+  int x,tam = 0;
+  char txt[100];
+  puts ("Entrada: ");
+  fgets(txt, 100, stdin);
+  //puts(txt);
+  tam = strlen(txt);
+  printf("Saida: ");
+  for (x=tam-1; x>=0; x--){
+  printf("%c",txt[x]);
+  }
+}
+int main(void) {
+  funcao();  
+  return 0;
+}
