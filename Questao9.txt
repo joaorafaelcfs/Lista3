@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  int i, resto = 0, count = 0, soma = 0, media = 0;
+  for (i=13; i<=73; i++){
+    resto = i%2;
+    if (resto == 0){
+      count++;
+      soma = soma + i;
+    }   
+  }
+  media = soma/count;
+  printf ("Média = %d \n", media);
+  return 0;
+}
