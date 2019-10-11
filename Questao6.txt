@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+  int i=0, l;
+    printf("Digite um numero: ");
+    scanf("%d", &l);
+    while(i<l){
+        if((i*i)>l){
+            printf("%d^2 > %d \n", i, l);
+            return 0;
+        }
+        else {
+            i++;
+        }
+    }
+    printf("Digite outro numero\n");
+ return 0;
+}
