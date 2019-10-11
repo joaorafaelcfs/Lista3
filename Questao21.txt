@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void funcao(){
+  int i, j;
+  int n;
+  printf("Escolha o tamanho do seu conjunto: ");
+  scanf("%d", &n);
+  int x[n];
+  printf("Digite os numeros do seu conjunto: \n");
+  for (i=1; i<=n; i++){
+    scanf ("%d", &x[i]);
+  }
+  printf("O seu conjunto é: {");
+  for (i=1; i<=n; i++){
+    if (i==n){
+      printf ("%d", x[i]);
+    }else{
+        printf ("%d, ", x[i]);
+    }    
+  }
+  printf ("} \n");
+  for (i=1; i<=n; i++){
+    for (j=1; j<=x[i]; j++){
+      printf ("*");
+    }
+    printf ("\n");
+  }
+}
+
+int main(void) {
+  funcao();
+  return 0;
+}
