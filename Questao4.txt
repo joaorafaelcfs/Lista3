@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+  int x, i, resto = 0;
+  printf("Digite o numero: ");
+  scanf("%d", &x);
+  // gera os numeros para serem divididos
+  for (i=1; i<=x; i++) {    
+      resto = x%i;
+      if(resto == 0){
+        printf("%d, ", i);
+      }
+  }
+  return 0;
+}
