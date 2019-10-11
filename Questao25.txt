@@ -1,0 +1,94 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(void) {
+  char txt[200];
+  int i, numa = 0, numb = 0, numc = 0, numd = 0, nume = 0, numf = 0, numg = 0, numh = 0, numi = 0, numj = 0, numk = 0, numl = 0, numm = 0, numn = 0, numo = 0, nump = 0, numq = 0, numr = 0, nums = 0,numt = 0, numu = 0, numv = 0, numw = 0, numx = 0, numy = 0, numz = 0;
+  puts ("Digite um texto: ");
+  fgets(txt, 200, stdin);
+  //puts(txt);   
+  for(i=0;txt[i]!='\0';i++){
+    if(txt[i]=='a' || txt[i] == 'A'){
+      numa++;
+    }if (txt[i]=='b' || txt[i] == 'B'){
+      numb++;
+    }if (txt[i]=='c' || txt[i] == 'C'){
+      numc++;
+    }if (txt[i]=='d' || txt[i] == 'D'){
+      numd++;
+    }if (txt[i]=='e' || txt[i] == 'E'){
+      nume++;
+    }if (txt[i]=='f' || txt[i] == 'F'){
+      numf++;
+    }if (txt[i]=='g' || txt[i] == 'G'){
+      numg++;
+    }if (txt[i]=='h' || txt[i] == 'H'){
+      numh++;
+    }if (txt[i]=='i' || txt[i] == 'I'){
+      numi++;
+    }if (txt[i]=='j' || txt[i] == 'J'){
+      numj++;
+    }if (txt[i]=='k' || txt[i] == 'K'){
+      numk++;
+    }if (txt[i]=='l' || txt[i] == 'L'){
+      numl++;
+    }if (txt[i]=='m' || txt[i] == 'M'){
+      numm++;
+    }if (txt[i]=='n' || txt[i] == 'N'){
+      numn++;
+    }if (txt[i]=='o' || txt[i] == 'O'){
+      numo++;
+    }if (txt[i]=='p' || txt[i] == 'P'){
+      nump++;
+    }if (txt[i]=='q' || txt[i] == 'Q'){
+      numq++;
+    }if (txt[i]=='r' || txt[i] == 'R'){
+      numr++;
+    }if (txt[i]=='s' || txt[i] == 'S'){
+      nums++;
+    }if (txt[i]=='t' || txt[i] == 'T'){
+      numt++;
+    }if (txt[i]=='u' || txt[i] == 'U'){
+      numu++;
+    }if (txt[i]=='v' || txt[i] == 'V'){
+      numv++;
+    }if (txt[i]=='w' || txt[i] == 'W'){
+      numw++;
+    }if (txt[i]=='x' || txt[i] == 'X'){
+      numx++;
+    }if (txt[i]=='y' || txt[i] == 'Y'){
+      numy++;
+    }if (txt[i]=='z' || txt[i] == 'Z'){
+      numz++;
+    }
+  }
+  printf("A = %d\n",numa);
+  printf("B = %d \n",numb);
+  printf("C = %d\n",numc);
+  printf("D = %d \n",numd);
+  printf("E = %d\n",nume);
+  printf("F = %d \n",numf);
+  printf("G = %d\n",numg);
+  printf("H = %d \n",numh);
+  printf("I = %d\n",numi);
+  printf("J = %d \n",numj);
+  printf("K = %d\n",numk);
+  printf("L = %d \n",numl);
+  printf("M = %d\n",numm);
+  printf("N = %d \n",numn);
+  printf("O = %d\n",numo);
+  printf("P = %d \n",nump);
+  printf("Q = %d \n",numq);
+  printf("R = %d\n",numr);
+  printf("S = %d \n",nums);
+  printf("T = %d\n",numt);
+  printf("U = %d \n",numu);
+  printf("V = %d\n",numv);
+  printf("W = %d \n",numw);
+  printf("X = %d \n",numx);
+  printf("Y = %d\n",numy);
+  printf("Z = %d \n",numz);  
+  return 0;
+}
