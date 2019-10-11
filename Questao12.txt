@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+  int x, i, j, cont=0, val[13], p = 0, dif = 0;
+  // o considerando que o primeiro numero primo é 2...
+  for (i=1; i<=val[12]; i++){
+    cont = 0;
+    for (j=1;j<=i; j++){
+      if (i%j==0){
+        cont++;
+      } 
+      }if (cont==2){  // De acordo com a defiinição para ser primo, tem que ser divisivel por dois numeros, por 1 e por ele mesmo...
+        p++;
+        val[p] = i;  // guarda-se o valor primo na posição "p" a cada vez que entra na condição 
+        printf("primo n%d° = %d \n", p, val[p]);      
+      }     
+  }
+  dif = val[6] - val[12]; //Diferença entre o 6° primo e o 12° primo 
+  printf ("diferença entre o primo n6° e n12°: \n ");
+  printf("%d - %d = %d \n", val[6], val[12], dif);  
+  return 0;
+}
