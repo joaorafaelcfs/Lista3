@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+int main(void) {
+  int i, j=0;
+  char txt[100];
+  puts ("Escreva um texto de no máximo 100 caracteres: ");
+  fgets(txt, 100, stdin);
+  puts(txt);
+  for (i=0; i<100; i++){
+    if (txt[i] == 65 || txt[i] == 97){
+      j=j+1;
+    }
+  }
+  printf("Você digitou em seu texto %d letras a", j);
+  
+  return 0;
+}
