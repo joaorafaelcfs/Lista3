@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+float celsius(float f){
+  float c = 0;
+  c = (f-32)/1.8;
+  return c;
+}
+
+int main(void) {
+  float a;
+  printf("Digite uma temperatura em Farenheit: ");
+  scanf ("%f", &a);
+  printf("%0.1f°F = %0.1f°C", a, celsius(a));
+  //printf ("%0.1f \n ", farenheit(a));
+  return 0;
+}
